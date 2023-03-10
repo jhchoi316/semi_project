@@ -15,4 +15,4 @@ ETRI Semi Project A팀
   - 수정 -> `refactor/설명`
 - 작업한 브랜치에서 main 브랜치로 push하고 PR 하기(checkout으로 브랜치 확인 꼭 하기)
 - merge 전 다른 팀원 확인 필수
-  - 임의로 혼자서 올리면 안됩니다! (윤정원 특히!)
+  - 임의로 혼자서 올리면 안됩니다!
