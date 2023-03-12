@@ -1,0 +1,59 @@
+@media screen and (min-width: 250px) {
+    .App {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    body {
+      height: 100%;
+      background-color: #4e5058;
+      font-size: 12px;
+    }
+  }
+
+  .layer_info {
+    position: absolute;
+    height: 36.5%;
+    width: 25%;
+    top: 63.5%; 
+    left: 0%;
+    background-color: #4e5058;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    margin: 0px;
+    border: 0px;
+  }
+
+  .graph {
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    left: 25%;
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.785);
+    margin: 0px;
+    border: 0px;
+  }
+
+  .sidebar {
+    position: absolute;
+    height: 63.5%;
+    width: 20%;
+    left: 5%;
+    top: 0%;
+    background-color: white;
+    margin: 0px;
+    border: 0px;
+  }
+
+  .sidebar_text {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    left: 8%;
+    top: 6%;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
