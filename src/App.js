@@ -1,24 +1,18 @@
 import "./styles.css";
-import "./DragAndDrop.js";
-import Show_layer_node from "./DragAndDrop.js";
+import Sidebar from "./Sidebar.js";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 function App() {
   return (
-    <>
-    <div className="layer_info">
-      <br></br>
-      Layer Information
-    </div>
-    <div className="graph"></div>
-    <div className="sidebar">
-      <div className="sidebar_text">
-        Layer
+    <DndProvider backend={HTML5Backend}>
+      <div className="layer_info">
+        <br></br>
+        Layer Information
       </div>
-      <Show_layer_node />
-    </div>    
-    </>
+      <Sidebar />
+    </DndProvider>
   );
- 
 }
 
 export default App;
