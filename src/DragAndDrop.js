@@ -1,8 +1,9 @@
 import "./styles.css";
 import Styled from "styled-components";
 import { Layer_node } from "./Layer_node";
+import Node from "./Node";
 
-const Node = Styled.div`
+export const Node_component = Styled.div`
 position: absolute;
 height: 7%;
 width: 43%;
@@ -16,28 +17,48 @@ line-height: 220%;
 border: 0px;
 margin: 0px;
 `;
-
-const Default_layer_node = [
-    'Conv2d', 'BatchNorm', 'ReLu', 'MaxPool2d'
+const NodeList = [
+  {
+    id: 1,
+    name: "Conv2d",
+    top: Layer_node["Conv2d"].top,
+    background: Layer_node["Conv2d"].background,
+  },
+  {
+    id: 2,
+    name: "BatchNorm2d",
+    top: Layer_node["BatchNorm2d"].top,
+    background: Layer_node["BatchNorm2d"].background,
+  },
+  {
+    id: 3,
+    name: "ReLU",
+    top: Layer_node["ReLU"].top,
+    background: Layer_node["ReLU"].background,
+  },
+  {
+    id: 4,
+    name: "MaxPool2d",
+    top: Layer_node["MaxPool2d"].top,
+    background: Layer_node["MaxPool2d"].background,
+  },
 ];
 
-export default function Show_layer_node() {
-   
-    return Default_layer_node.map(
-        (node) =>
-        <>
-        <Node top = {Layer_node['Conv2d'].top} background={Layer_node['Conv2d'].background}>
-            Conv2d  
-        </Node>
-        <Node top = {Layer_node['BatchNorm2d'].top} background={Layer_node['BatchNorm2d'].background}>
-            BatchNorm2d
-        </Node>
-        <Node top = {Layer_node['ReLU'].top} background={Layer_node['ReLU'].background}>
-            ReLU
-        </Node>
-        <Node top = {Layer_node['MaxPool2d'].top} background={Layer_node['MaxPool2d'].background}>
-            MaxPool2d
-        </Node>
-        </>
-        )
+export function Show_layer_node() {
+  return (
+    <>
+      <div className="sidebar">
+        {NodeList.map((node) => {
+          return (
+            <Node
+              name={node.name}
+              background={node.background}
+              id={node.id}
+              top={node.top}
+            />
+          );
+        })}
+      </div>
+    </>
+  );
 }
