@@ -8,6 +8,7 @@ export default function Sidebar() {
       <Show_layer_node />
       {/* Board 부분 */}
       <div className="graph"></div>
+      <div className="sidebar_text">Layer</div>
     </>
   );
 }
