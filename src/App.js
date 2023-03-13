@@ -1,4 +1,6 @@
 import "./styles.css";
+import "./DragAndDrop.js";
+import Show_layer_node from "./DragAndDrop.js";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <div className="sidebar_text">
         Layer
       </div>
+      <Show_layer_node />
     </div>    
     </>
   );
