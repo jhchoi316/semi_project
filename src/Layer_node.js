@@ -5,14 +5,14 @@ export const Layer_node = {
   },
   BatchNorm2d: {
     background: "#DEE8E4",
-    top: "28%",
+    top: "25%",
   },
   ReLU: {
     background: "#D9E3E8",
-    top: "41%",
+    top: "35%",
   },
   MaxPool2d: {
     background: "#FAF1CB",
-    top: "54%",
+    top: "45%",
   },
 };
