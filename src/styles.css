@@ -14,10 +14,10 @@
   position: absolute;
   height: 36.5%;
   width: 25%;
-  top: 63.5%; 
+  top: 63.5%;
   left: 0%;
   background-color: #4e5058;
-  text-align: center; 
+  text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
   color: white;
@@ -51,8 +51,8 @@
   position: absolute;
   height: 0%;
   width: 0%;
-  left: 8%;
-  top: 6%;
+  left: 7%;
+  top: 4%;
   font-size: 1.3rem;
   font-weight: bold;
 }

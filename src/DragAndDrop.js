@@ -5,9 +5,9 @@ import Node from "./Node";
 
 export const Node_component = Styled.div`
 position: absolute;
-height: 7%;
-width: 43%;
-left: 15%;
+height: 10%;
+width: 60%;
+left: 18%;
 top: ${(props) => props.top};
 background: ${(props) => props.background};
 border-radius: 10px;
